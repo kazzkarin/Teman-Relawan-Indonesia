@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daftar Program - Teman Relawan Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('../../komponen/header/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <!-- Main Program List -->
+  <main id="programkita" class="min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto text-center mb-10">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Program Kami</h2>
+      <p class="text-base sm:text-lg text-gray-600 mt-2">Coming Soon</p>
+    </div>
+
+    <!-- Container untuk program -->
+    <div id="program-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Data program akan dimuat dari programkita.js -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('../../komponen/footer/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <!-- Script -->
+  <script src="../../javascript/programkita.js"></script>
+</body>
+</html>

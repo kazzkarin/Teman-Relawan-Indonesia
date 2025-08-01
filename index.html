@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teman Relawan Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body class="bg-[#f7f9fc] font-sans">
+
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('komponen/header/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <!-- Hero Section -->
+<section
+  id="beranda" class="relative bg-cover bg-center bg-no-repeat text-white min-h-[60vh] flex items-center justify-center px-4 sm:px-2 text-center"
+  style="background-image: url('assets/image/example.png');"
+>
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div class="relative z-10 text-center max-w-3xl">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">TEMAN RELAWAN INDONESIA</h1>
+    <p class="text-lg md:text-xl mb-6">
+      Mengabdi dengan hati membangun negeri
+    </p>
+    <button
+      id="daftar-anggota-btn"
+      class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-md inline-block"
+    >
+      Daftar Jadi Relawan
+    </button>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+<section id="tentang" class="py-16 px-6 bg-white">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <!-- Gambar -->
+    <div>
+      <img src="assets/image/Tentangkami.jpeg" alt="Tentang Kami" class="w-full rounded-lg shadow-md" />
+    </div>
+
+    <!-- Teks Deskripsi -->
+    <div>
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Teman Relawan Indonesia</h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Teman Relawan Indonesia adalah sebuah komunitas yang bergerak dibidang sosial dan berpusat di wilayah bandung. Komunitas ini didirikan pada tanggal 1 Maret 2022 dengan tujuan agar pemuda indonesia memiliki jiwa sosial yang aktif, kreatif dan konstruktif untuk membangun indonesia lebih baik. Fungsi adanya teman relawan sebagai wadah pemuda yang memiliki tujuan sama dengan visi misi teman relawan indonesia serta menjadi wadah pembinaan & pelatihan untuk mengembangkan potensi anggotanya, selain dari pada itu berperan aktif dalam menjaga dan memelihara lingkungan masyarakat untuk lebih produktif dan mandiri.
+      </p>
+    </div>
+  </div>
+</section>
+
+ <!-- Section Program -->
+<section id="program" class="py-16 px-6 bg-gray-100">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Program Kami</h2>
+
+    <div class="swiper programSwiper">
+      <div id="program-list" class="swiper-wrapper flex justify-center">
+        <div class="text-center text-gray-500 text-xl font-medium py-20">
+          Coming Soon 🚧<br />
+          Program sedang dalam persiapan.
+        </div>
+
+    <!-- Swiper Container -->
+    <div class="swiper programSwiper">
+      <div id="program-list" class="swiper-wrapper">
+        <!-- Card program akan dimasukkan di sini lewat JS -->
+      </div>
+
+      <!-- Navigasi -->
+      <div class="swiper-button-next text-gray-700"></div>
+      <div class="swiper-button-prev text-gray-700"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section Dokumentasi Kegiatan -->
+<section class="py-16 px-6 bg-white" id="galeri">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">Dokumentasi Kegiatan</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      
+      <!-- Ganti URL ini dengan URL post Instagram -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMu2n6fR45j/?utm_source=ig_web_copy_link&igsh=MTJub2JzcDk0dHZiMg" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DLoVaCZRiXt/?utm_source=ig_web_copy_link&igsh=OHk1bjN1Ym1seDE1" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DLUdMKWRAyT/?utm_source=ig_web_copy_link&igsh=cWx0MDc2OTh3aHV0" data-instgrm-version="14"></blockquote>
+
+    </div>
+  </div>
+</section>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('komponen/footer/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+
+<script src="javascript/program.js"></script>
+
+<!-- Placeholder popup notifikasi -->
+<div id="popup-placeholder"></div>
+
+<script>
+  fetch("komponen/popup/popup-closed.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("popup-placeholder").innerHTML = html;
+    });
+</script>
+
+<!-- Load popup -->
+<div id="popup-placeholder"></div>
+<script>
+  fetch("komponen/popup/popupcekstatus.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("popup-placeholder").innerHTML = html;
+    });
+</script>
+
+<!-- JS -->
+<script src="javascript/popupcekstatus.js"></script>
+
+</body>
+
+<!-- Swiper JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".programSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+    },
+  });
+</script>
+
+</html>

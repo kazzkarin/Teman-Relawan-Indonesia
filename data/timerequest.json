@@ -1,0 +1,19 @@
+{
+  "formrekrutmen": {
+    "open": "2025-07-01T00:00:00",
+    "close": "2025-07-6T23:59:59",
+    "message": "Pendaftaran anggota belum dibuka atau sudah ditutup."
+  },
+  "formvolunteer": {
+    "Bakti Sosial Ramadan": {
+      "open": "2025-07-03T00:00:00",
+      "close": "2025-07-07T23:59:59",
+      "message": "Pendaftaran untuk program Bakti Sosial Ramadan sedang ditutup."
+    },
+    "Aksi Bersih Sungai": {
+      "open": "2025-07-05T00:00:00",
+      "close": "2025-07-08T23:59:59",
+      "message": "Pendaftaran Aksi Bersih Sungai belum dibuka atau telah ditutup."
+    }
+  }
+}

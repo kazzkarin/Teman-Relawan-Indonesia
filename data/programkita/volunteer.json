@@ -1,0 +1,20 @@
+[
+  {
+    "judul": "Bakti Sosial Ramadan",
+    "deskripsi": "Distribusi sembako ke warga kurang mampu.",
+    "poster": "../../assets/image/program/poster1.jpg",
+    "link": "halaman/formvolunteer/formpendaftaran.html?program=Bakti Sosial Ramadan",
+    "open": "2025-07-01T00:00:00",
+    "close": "2025-07-10T23:59:59",
+    "message": "Pendaftaran Bakti Sosial Ramadan belum dibuka atau sudah ditutup."
+  },
+  {
+    "judul": "Aksi Bersih Sungai",
+    "deskripsi": "Membersihkan sungai dari sampah plastik.",
+    "poster": "../../assets/image/program/poster2.jpg",
+    "link": "halaman/formvolunteer/formpendaftaran.html?program=Aksi Bersih Sungai",
+    "open": "2025-07-05T00:00:00",
+    "close": "2025-07-15T23:59:59",
+    "message": "Pendaftaran Aksi Bersih Sungai belum aktif saat ini."
+  }
+]

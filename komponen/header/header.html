@@ -1,0 +1,52 @@
+<header class="bg-white shadow-md py-4 relative z-50">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-4 px-6">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-4 md:gap-6">
+      <a href="./index.html">
+        <img src="./assets/image/logo/logotri.PNG" alt="Logo TRI" class="h-10 w-auto" />
+      </a>
+      <a href="#">
+        <img src="./assets/image/logo/logobantuteman.png" alt="Logo Bantu Teman" class="h-10 w-auto" />
+      </a>
+    </div>
+
+    <!-- Navigasi -->
+    <nav class="flex justify-start md:justify-end items-center flex-wrap gap-4 md:gap-6 text-sm md:text-base relative">
+
+      <!-- About -->
+      <a href="./#tentang" class="text-gray-700 hover:text-blue-600">About</a>
+
+      <!-- Anggota: Klik + Dropdown -->
+      <div class="relative group">
+        <!-- Klik -->
+        <a href="/halaman/anggota/anggota.html" class="text-gray-700 hover:text-blue-600 block">Anggota</a>
+        <!-- Dropdown -->
+        <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-50">
+          <a href="./halaman/anggota/anggota.html#bandung" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">Bandung</a>
+          <a href="./halaman/anggota/anggota.html#jakarta" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">Jakarta</a>
+          <a href="./halaman/anggota/anggota.html#palembang" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">Palembang</a>
+        </div>
+      </div>
+
+      <!-- Galeri -->
+      <a href="./halaman/programkita/programkita.html#galeri" class="text-gray-700 hover:text-blue-600">Galeri</a>
+
+      <!-- Program -->
+      <a href="./halaman/programkita/programkita.html#program" class="text-gray-700 hover:text-blue-600">Program</a>
+
+      <!-- Contact: WhatsApp Pop-up -->
+      <button onclick="openWhatsApp()" class="text-gray-700 hover:text-blue-600 focus:outline-none">Contact</button>
+
+      <!-- Daftar -->
+      <a href="./halaman/formrekrutmen/formpendaftaran.html#daftarrelawan">Daftar</a>
+    </nav>
+  </div>
+</header>
+
+<!-- WA Popup Script -->
+<script>
+  function openWhatsApp() {
+    window.open('https://wa.me/62895337811318?text=Halo%20saya%20tertarik%20bergabung%20sebagai%20relawan%20di%20Teman%20Relawan%20Indonesia.', '_blank');
+  }
+</script>

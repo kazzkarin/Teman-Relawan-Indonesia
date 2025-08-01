@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Struktur TRI Palembang 2025/2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('../../komponen/header/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <!-- Struktur TRI Palembang -->
+  <section id="palembang" class="py-16 px-4 sm:px-8 lg:px-20">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-blue-700 mb-3">Struktur Kepengurusan</h1>
+      <p class="text-lg text-gray-600">TRI Palembang Periode 2025/2026</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- TOPMAN -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-4">A. TOPMAN</h2>
+        <ul class="text-sm space-y-1 text-gray-700">
+          <li><strong>Ketua:</strong> Wahyu Ridho Firmansyah</li>
+          <li><strong>Wakil Ketua:</strong> Regi Febriansyah</li>
+          <li><strong>Sekretaris 1:</strong> Apriliani Diva Pramita</li>
+          <li><strong>Sekretaris 2:</strong> Aulia Zaibullah Putri</li>
+          <li><strong>Bendahara 1:</strong> Wardah Febrianti</li>
+          <li><strong>Bendahara 2:</strong> Adinda Aulia Rahmadhani</li>
+        </ul>
+      </div>
+
+      <!-- Pendidikan -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-4">B. Departemen Pendidikan</h2>
+        <ul class="text-sm space-y-1 text-gray-700">
+          <li><strong>Ketua:</strong> Naswa Azahro</li>
+          <li><strong>Anggota:</strong></li>
+          <ul class="list-disc list-inside text-gray-600 ml-4 space-y-1">
+            <li>Muhammad Rizki Ananda</li>
+            <li>Clarysa Faratyka Afrilya Putri</li>
+            <li>Marsya Dwi Fazila</li>
+            <li>Tri Nur Fadhilah</li>
+          </ul>
+        </ul>
+      </div>
+
+      <!-- Sosial -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-4">C. Departemen Sosial</h2>
+        <ul class="text-sm space-y-1 text-gray-700">
+          <li><strong>Ketua:</strong> Irawan</li>
+          <li><strong>Anggota:</strong></li>
+          <ul class="list-disc list-inside text-gray-600 ml-4 space-y-1">
+            <li>Aisyah Maharani</li>
+            <li>M Riqi Agustian</li>
+            <li>Hikta Amanda Putri</li>
+            <li>Riska Amelia</li>
+          </ul>
+        </ul>
+      </div>
+
+      <!-- Medinfo -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-4">D. Media & Informasi</h2>
+        <ul class="text-sm space-y-1 text-gray-700">
+          <li><strong>Ketua:</strong> Tegar Fillah</li>
+          <li><strong>Anggota:</strong></li>
+          <ul class="list-disc list-inside text-gray-600 ml-4 space-y-1">
+            <li>Rahmatin Nufus</li>
+            <li>Zulkarnain</li>
+            <li>Cahya Rahmi Anis</li>
+          </ul>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('../../komponen/footer/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
