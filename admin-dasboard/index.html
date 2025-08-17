@@ -1,0 +1,116 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Admin Organisasi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body id="dashboard-page" class="bg-gray-100 flex h-screen overflow-hidden">
+
+    <!-- Fitur Sidebar Navigasi Global -->
+    <div id="sidebar" class="w-64 bg-gray-900 text-white flex-shrink-0 transition-transform duration-300 ease-in-out transform -translate-x-full md:translate-x-0 fixed md:static inset-y-0 left-0 z-50">
+        <div class="p-6">
+            <h1 class="text-2xl font-bold">Admin Panel</h1>
+        </div>
+        <nav class="mt-10">
+            <a href="index.html" class="flex items-center p-4 hover:bg-gray-700 transition duration-200">
+                <i class="fas fa-home mr-3"></i> Dashboard
+            </a>
+            <a href="members.html" class="flex items-center p-4 hover:bg-gray-700 transition duration-200">
+                <i class="fas fa-users mr-3"></i> Manajemen Anggota
+            </a>
+            <a href="new-members.html" class="flex items-center p-4 hover:bg-gray-700 transition duration-200">
+                <i class="fas fa-user-plus mr-3"></i> Pendaftaran Anggota Baru
+            </a>
+            <a href="event-applicants.html" class="flex items-center p-4 hover:bg-gray-700 transition duration-200">
+                <i class="fas fa-file-invoice mr-3"></i> Pendaftaran Event
+            </a>
+            <a href="ongoing-events.html" class="flex items-center p-4 hover:bg-gray-700 transition duration-200">
+                <i class="fas fa-calendar-check mr-3"></i> Event Berjalan
+            </a>
+            <a href="manage-events.html" class="flex items-center p-4 hover:bg-gray-700 transition duration-200">
+                <i class="fas fa-edit mr-3"></i> Manajemen Event
+            </a>
+            <a href="settings.html" class="flex items-center p-4 hover:bg-gray-700 transition duration-200">
+                <i class="fas fa-cog mr-3"></i> Pengaturan Dashboard
+            </a>
+        </nav>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="flex-1 flex flex-col overflow-hidden">
+        <!-- Header -->
+        <header class="bg-white shadow-md p-4 flex items-center justify-between">
+            <button id="toggle-sidebar-btn" class="md:hidden text-gray-500 hover:text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            <h2 class="text-xl font-semibold text-gray-800">Dashboard</h2>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200 p-6">
+            <!-- Bagian Dashboard Utama -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Kartu Informasi -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-semibold">Anggota Aktif</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-1">75</p>
+                    </div>
+                    <i class="fas fa-users text-4xl text-blue-400"></i>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-semibold">Event Berjalan</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-1">5</p>
+                    </div>
+                    <i class="fas fa-calendar-check text-4xl text-green-400"></i>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-semibold">Pendaftar Baru</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-1">12</p>
+                    </div>
+                    <i class="fas fa-user-plus text-4xl text-purple-400"></i>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-semibold">Event Mendatang</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-1">3</p>
+                    </div>
+                    <i class="fas fa-calendar-alt text-4xl text-yellow-400"></i>
+                </div>
+            </div>
+
+            <!-- Bagian Notifikasi & Aktivitas -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Aktivitas Terkini</h3>
+                <ul class="divide-y divide-gray-200">
+                    <li class="py-3 flex items-center justify-between">
+                        <span class="text-gray-700">Pendaftar baru: Sarah Gunawan</span>
+                        <span class="text-sm text-gray-500">10 menit yang lalu</span>
+                    </li>
+                    <li class="py-3 flex items-center justify-between">
+                        <span class="text-gray-700">Event 'Workshop Web Dev' dimulai</span>
+                        <span class="text-sm text-gray-500">1 jam yang lalu</span>
+                    </li>
+                    <li class="py-3 flex items-center justify-between">
+                        <span class="text-gray-700">Anggota baru 'Michael Tan' telah mendaftar</span>
+                        <span class="text-sm text-gray-500">3 jam yang lalu</span>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script untuk logika utama -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

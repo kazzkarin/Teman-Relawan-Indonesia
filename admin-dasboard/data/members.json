@@ -1,0 +1,201 @@
+// --- File: /data/members.json ---
+[
+  {
+    "id": 1,
+    "nama": "Budi Santoso",
+    "email": "budi.s@example.com",
+    "departemen": "Marketing",
+    "tahunBergabung": 2023
+  },
+  {
+    "id": 2,
+    "nama": "Siti Nurhaliza",
+    "email": "siti.n@example.com",
+    "departemen": "Keuangan",
+    "tahunBergabung": 2022
+  },
+  {
+    "id": 3,
+    "nama": "John Doe",
+    "email": "john.d@example.com",
+    "departemen": "Teknologi",
+    "tahunBergabung": 2023
+  },
+  {
+    "id": 4,
+    "nama": "Jane Smith",
+    "email": "jane.s@example.com",
+    "departemen": "Pemasaran",
+    "tahunBergabung": 2024
+  },
+  {
+    "id": 5,
+    "nama": "Ahmad Fauzi",
+    "email": "ahmad.f@example.com",
+    "departemen": "Riset dan Pengembangan",
+    "tahunBergabung": 2024
+  },
+  {
+    "id": 6,
+    "nama": "Rina Wijaya",
+    "email": "rina.w@example.com",
+    "departemen": "Humas",
+    "tahunBergabung": 2023
+  },
+  {
+    "id": 7,
+    "nama": "Dina Kurniawan",
+    "email": "dina.k@example.com",
+    "departemen": "Desain",
+    "tahunBergabung": 2022
+  }
+]
+```json
+// --- File: /data/new-members.json ---
+[
+  {
+    "id": 1,
+    "nama": "Michael Tan",
+    "email": "michael.t@example.com",
+    "alasanBergabung": "Tertarik dengan visi organisasi.",
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "nama": "Olivia Lee",
+    "email": "olivia.l@example.com",
+    "alasanBergabung": "Ingin berkontribusi di bidang teknologi.",
+    "status": "approved"
+  },
+  {
+    "id": 3,
+    "nama": "Kevin Pratama",
+    "email": "kevin.p@example.com",
+    "alasanBergabung": "Mencari pengalaman baru.",
+    "status": "pending"
+  },
+  {
+    "id": 4,
+    "nama": "Sarah Gunawan",
+    "email": "sarah.g@example.com",
+    "alasanBergabung": "Ingin memperluas jaringan.",
+    "status": "approved"
+  },
+  {
+    "id": 5,
+    "nama": "David Susanto",
+    "email": "david.s@example.com",
+    "alasanBergabung": "Tertarik dengan kegiatan sosial.",
+    "status": "pending"
+  }
+]
+```json
+// --- File: /data/event-applicants.json ---
+[
+  {
+    "id": 1,
+    "nama": "Fahmi R.",
+    "email": "fahmi.r@example.com",
+    "event": "Workshop Web Development",
+    "status": "approved"
+  },
+  {
+    "id": 2,
+    "nama": "Maria L.",
+    "email": "maria.l@example.com",
+    "event": "Seminar Kepemimpinan",
+    "status": "pending"
+  },
+  {
+    "id": 3,
+    "nama": "Rizky A.",
+    "email": "rizky.a@example.com",
+    "event": "Workshop Desain Grafis",
+    "status": "approved"
+  },
+  {
+    "id": 4,
+    "nama": "Sinta B.",
+    "email": "sinta.b@example.com",
+    "event": "Workshop Web Development",
+    "status": "pending"
+  },
+  {
+    "id": 5,
+    "nama": "Yoga P.",
+    "email": "yoga.p@example.com",
+    "event": "Seminar Kepemimpinan",
+    "status": "approved"
+  }
+]
+```json
+// --- File: /data/events.json ---
+[
+  {
+    "id": 1,
+    "namaEvent": "Workshop Web Development",
+    "lokasi": "Online",
+    "tanggal": "25 Oktober 2024",
+    "status": "Berlangsung",
+    "deskripsi": "Pelajari dasar-dasar pengembangan web dengan HTML, CSS, dan JavaScript.",
+    "gambar": "[https://placehold.co/600x400/0891b2/ffffff?text=Web+Dev](https://placehold.co/600x400/0891b2/ffffff?text=Web+Dev)"
+  },
+  {
+    "id": 2,
+    "namaEvent": "Seminar Kepemimpinan",
+    "lokasi": "Aula Serbaguna",
+    "tanggal": "10 November 2024",
+    "status": "Akan Datang",
+    "deskripsi": "Membangun jiwa kepemimpinan yang efektif dan inspiratif.",
+    "gambar": "[https://placehold.co/600x400/f59e0b/ffffff?text=Leadership](https://placehold.co/600x400/f59e0b/ffffff?text=Leadership)"
+  },
+  {
+    "id": 3,
+    "namaEvent": "Lomba Desain Grafis",
+    "lokasi": "Online",
+    "tanggal": "15 Desember 2024",
+    "status": "Pendaftaran Dibuka",
+    "deskripsi": "Tunjukkan kreativitas Anda dalam mendesain poster digital.",
+    "gambar": "[https://placehold.co/600x400/d946ef/ffffff?text=Design+Comp](https://placehold.co/600x400/d946ef/ffffff?text=Design+Comp)"
+  },
+  {
+    "id": 4,
+    "namaEvent": "Webinar UX/UI",
+    "lokasi": "Online",
+    "tanggal": "20 Januari 2025",
+    "status": "Akan Datang",
+    "deskripsi": "Mendalami user experience dan user interface untuk produk digital.",
+    "gambar": "[https://placehold.co/600x400/10b981/ffffff?text=UX/UI](https://placehold.co/600x400/10b981/ffffff?text=UX/UI)"
+  },
+  {
+    "id": 5,
+    "namaEvent": "Rapat Tahunan Anggota",
+    "lokasi": "Kantor Pusat",
+    "tanggal": "30 Desember 2024",
+    "status": "Akan Datang",
+    "deskripsi": "Evaluasi kinerja organisasi dan merencanakan agenda tahun depan.",
+    "gambar": "[https://placehold.co/600x400/ef4444/ffffff?text=Annual+Meeting](https://placehold.co/600x400/ef4444/ffffff?text=Annual+Meeting)"
+  }
+]
+```json
+// --- File: /data/users.json ---
+[
+  {
+    "id": 1,
+    "username": "superadmin",
+    "password": "password123",
+    "role": "Super Admin"
+  },
+  {
+    "id": 2,
+    "username": "adminanggota",
+    "password": "password123",
+    "role": "Admin Anggota"
+  },
+  {
+    "id": 3,
+    "username": "adminevent",
+    "password": "password123",
+    "role": "Admin Event"
+  }
+]
